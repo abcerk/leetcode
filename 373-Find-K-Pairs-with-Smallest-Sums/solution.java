@@ -1,8 +1,21 @@
 public class Solution {
+    
+    class Pair {
+        int x;
+        int y;
+        int sum;
+        
+        public Pair(int x, int y) {
+            this.x = x;
+            this.y = y;
+            sum = x + y;
+        }
+    }
+    
     public List<int[]> kSmallestPairs(int[] nums1, int[] nums2, int k) {
         
         List<int[]> result = new ArrayList();
-        if(nums1 == null || nums2 == null || k == 0 || num1.length == 0 || num2.length == 0) {
+        if(nums1 == null || nums2 == null || k == 0 || nums1.length == 0 || nums2.length == 0) {
             return result;
         }
         
@@ -28,21 +41,5 @@ public class Solution {
         return result;
         
     }
-    
-    class Pair() {
-        int x;
-        int y;
-        int sum;
-        
-        public Pair(int x, int y) {
-            this.x = x;
-            this.y = y;
-            sum = x + y;
-        }
-    }
-        
-        
-        
-        
         
 }
